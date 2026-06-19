@@ -4,4 +4,4 @@
 - purchase
 - HR
 ## Worflow
-Buy water (with their bottles) from one vendor and sell them to multiple vendors. Shipping applies
+Buy drinking water (with their bottles) from one vendor and sell them to multiple vendors. Shipping applies (by us). We have 2 - 3 employees maintaining the business. 
