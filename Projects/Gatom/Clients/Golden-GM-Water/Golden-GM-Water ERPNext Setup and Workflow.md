@@ -4,7 +4,7 @@ tags: [erpnext, frappe, functional, configuration, hr, golden-gm-water]
 
 # 💧 Golden-GM-Water — ERPNext Setup and Workflow
 
-This document outlines the system configuration and operational workflows for **Golden-GM-Water** in ERPNext v16. Since the client requires a lightweight implementation with no custom backend app codebase (except for custom fields/scripts configured via the UI), we will utilize standard ERPNext modules for Inventory, Purchasing, Sales, and Logistics, combined with custom fields and configurations in the **HR Module** for their 2-3 employees.
+This document outlines the system configuration and operational workflows for **Golden-GM-Water** in ERPNext v16. Since the client requires a lightweight implementation with no custom backend app codebase (except for custom fields/scripts configured via the UI), we will utilize standard ERPNext modules for Inventory, Purchasing, Sales, and Logistics, combined with custom fields and configurations in the **HR Module** to support their operations.
 
 ---
 
@@ -19,13 +19,11 @@ flowchart TD
         MR[Material Request] --> PO[Purchase Order]
         PO --> PR[Purchase Receipt]
         PR --> PI[Purchase Invoice]
-        PI --> PayE1[Payment Entry]
         PR -->|Increases Stock| MainWh[(Warehouse: Main Store - GG)]
     end
 
     subgraph sales ["2: Sales & Inventory - Order to Handoff"]
-        CustOrder[Customer Order] --> SO[Sales Order]
-        SO --> DN[Delivery Note]
+        SO[Sales Order] --> DN[Delivery Note]
         MainWh -->|Decreases Stock| DN
     end
 
@@ -50,10 +48,6 @@ flowchart TD
         SS -->|Monthly Payroll Payout| Bank[Bank/Cash Settlement]
     end
 
-    %% Connect the stages
-    PayE1 -.-> CustOrder
-    DN -.-> DT
-    DT_Complete --> DDR
 ```
 
 ---
@@ -152,7 +146,7 @@ graph TD
 
 ## 👥 5. HR Module Configuration & Customizations
 
-Since Golden-GM-Water is managed by **2-3 employees** (e.g., Driver/Delivery Agent, Sales/Admin Clerk, Operations Manager), we want to keep the HR module light but customized to support in-house distribution.
+Since Golden-GM-Water is managed by a small staff across different functional roles (Admin, Sales, Purchase, Inventory, and Delivery), we want to keep the HR module light but customized to support in-house distribution.
 
 ### 🛠️ Custom Fields for Employee DocType
 
@@ -192,7 +186,7 @@ Since there are only 2-3 employees, tracking commissions is simple:
 
 Avoid heavy shift rosters. Instead:
 - **Attendance**:
-  - Configure **Employee Attendance Tool** for single-click daily attendance marking (Present/Absent/Half Day) by the Admin Clerk.
+  - Configure **Employee Attendance Tool** for single-click daily attendance marking (Present/Absent/Half Day) by the Admin.
 - **Leave Management**:
   - Define 2 basic leave types: `Annual Leave` and `Sick Leave`.
   - Perform a one-time **Leave Allocation** at the start of the year.
@@ -202,10 +196,12 @@ Avoid heavy shift rosters. Instead:
 
 ## 🔒 6. User Roles & Permissions
 
-Configure simple user permissions for the 2-3 employees:
+Configure simple user permissions for the 5 staff roles:
 
-| Role Name | Access Level | Permitted Modules |
+| Role Name | Access Level | Permitted Modules / DocTypes |
 |---|---|---|
-| **Water Admin / Owner** | Full Access (System Manager) | All modules (Accounts, Stock, Sales, Purchase, HR) |
-| **Sales / Operations Clerk** | Operational Write/Read | Sales, Purchase, Stock, basic HR (Attendance, Expense Claims) |
-| **Delivery Driver** | Mobile Read-Only / Desk user | View Delivery Notes, update Delivery Trip status |
+| **Admin** | Full Access (System Manager) | All modules (Accounts, Stock, Sales, Purchase, HR, Settings) |
+| **Sales** | Operational Write/Read | Sales Module (Customer, Sales Order, Sales Invoice, Payment Entry) |
+| **Purchase** | Operational Write/Read | Purchase Module (Supplier, Material Request, Purchase Order, Purchase Invoice) |
+| **Inventory** | Stock Control Write/Read | Stock Module (Item, Warehouse, Stock Entry, Delivery Note, Purchase Receipt) |
+| **Delivery** | Mobile Read-Only / Update Status | View Delivery Notes, update Delivery Trip status |

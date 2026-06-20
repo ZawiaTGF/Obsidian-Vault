@@ -11,5 +11,11 @@
   "livePreview": true,
   "attachmentFolderPath": "07 Notes/Images",
   "defaultViewMode": "preview",
-  "tabSize": 4
+  "tabSize": 4,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": true,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }
