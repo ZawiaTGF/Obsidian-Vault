@@ -53,6 +53,8 @@ Golden-GM-Water is a drinking water distribution business. The business model is
 |---|---|
 | [[Foundation]] | Original project brief and constraints |
 | [[Golden-GM-Water ERPNext Setup and Workflow]] | Complete functional configuration guide mapping standard modules and specifying HR customizations |
+| [[Golden-GM-Water ERPNext Setup and Workflow (Arabic)]] | Arabic version of the functional configuration guide |
+
 
 ---
 
