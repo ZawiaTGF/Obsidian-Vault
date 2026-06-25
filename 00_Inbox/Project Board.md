@@ -1,5 +1,5 @@
 ---
-type: "kanban"
+type: kanban
 tags:
   - kanban
   - projects

@@ -1,5 +1,12 @@
 ---
-tags: [gatom, pulse, agent, a02, heartbeat, health-monitoring, functional]
+tags:
+  - gatom
+  - pulse
+  - agent
+  - a02
+  - heartbeat
+  - health-monitoring
+  - functional
 ---
 
 # A02 — Heartbeat Collection: Functional Analysis
