@@ -14,7 +14,7 @@ CBO tasks (Mohamed Fattah + Talha Erden)
 	0 open task(s)
 	0 overdue task(s)
 	0 late done task(s)
-	0 on time task(s)
+	1 on time task(s) - phase 1 was done by Erden
 
 CFO tasks (Abdulrahman Ftahi + Luqman Elghdamsi)
 	0 open task(s)

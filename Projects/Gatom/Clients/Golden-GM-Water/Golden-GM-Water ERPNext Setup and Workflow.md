@@ -198,10 +198,10 @@ Avoid heavy shift rosters. Instead:
 
 Configure simple user permissions for the 5 staff roles:
 
-| Role Name | Access Level | Permitted Modules / DocTypes |
-|---|---|---|
-| **Admin** | Full Access (System Manager) | All modules (Accounts, Stock, Sales, Purchase, HR, Settings) |
-| **Sales** | Operational Write/Read | Sales Module (Customer, Sales Order, Sales Invoice, Payment Entry) |
-| **Purchase** | Operational Write/Read | Purchase Module (Supplier, Material Request, Purchase Order, Purchase Invoice) |
-| **Inventory** | Stock Control Write/Read | Stock Module (Item, Warehouse, Stock Entry, Delivery Note, Purchase Receipt) |
-| **Delivery** | Mobile Read-Only / Update Status | View Delivery Notes, update Delivery Trip status |
+| Role Name     | Access Level                     | Permitted Modules / DocTypes                                                   |
+| ------------- | -------------------------------- | ------------------------------------------------------------------------------ |
+| **Admin**     | Full Access (System Manager)     | All modules (Accounts, Stock, Sales, Purchase, HR, Settings)                   |
+| **Sales**     | Operational Write/Read           | Sales Module (Customer, Sales Order, Sales Invoice, Payment Entry)             |
+| **Purchase**  | Operational Write/Read           | Purchase Module (Supplier, Material Request, Purchase Order, Purchase Invoice) |
+| **Inventory** | Stock Control Write/Read         | Stock Module (Item, Warehouse, Stock Entry, Delivery Note, Purchase Receipt)   |
+| **Delivery**  | Mobile Read-Only / Update Status | View Delivery Notes, update Delivery Trip status                               |
