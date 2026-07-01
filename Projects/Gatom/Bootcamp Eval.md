@@ -12,7 +12,7 @@ CTO tasks (Mohamed Fattah + Talha Erden): 3 points
 
 CBO tasks (Mohamed Fattah + Talha Erden): 3 points
 - 0 open task(s)
-- 1 overdue task(s) - Task was never finished, but when meeting, the task’s work was done (just not notified). Only Talha provided proof. Consifer a ‘late done ’
+- 1 overdue task(s) - Task was never finished, but when meeting, the task’s work was done (just not notified). Only Talha provided proof. Consifer a ‘late done’ for Talha
 - 0 late done task(s)
 - 1 on time task(s) - phase 1 was done by Fattah & Talha
 
@@ -38,6 +38,6 @@ team collab: 1 point to each member
 
 A.Z: 8
 M.F: 6
-T.E: +5 +1
+T.E: 9
 A.F:2
 L.E:-8
