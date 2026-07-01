@@ -1,1 +1,0 @@
-window.timeGarden.charts.monthlyRatingChart(dv, input.container, input);

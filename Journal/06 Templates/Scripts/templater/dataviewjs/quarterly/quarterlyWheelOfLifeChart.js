@@ -1,1 +1,0 @@
-window.timeGarden.charts.quarterlyWheelOfLifeChart(dv, input.container, input);

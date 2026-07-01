@@ -6,7 +6,7 @@
   "pendingMigrations": [],
   "useShelves": false,
   "showReloadHint": false,
-  "openOnStartup": "daily",
+  "openOnStartup": "",
   "journals": {
     "daily": {
       "name": "daily",

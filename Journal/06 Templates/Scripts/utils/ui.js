@@ -1,1 +1,0 @@
-module.exports = window.timeGarden.utils.ui;

@@ -1,1 +1,0 @@
-window.timeGarden.charts.quarterlyRatingChart(dv, input.container, input);

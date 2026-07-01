@@ -1,1 +1,0 @@
-window.timeGarden.charts.monthlyWheelOfLifeChart(dv, input.container, input);

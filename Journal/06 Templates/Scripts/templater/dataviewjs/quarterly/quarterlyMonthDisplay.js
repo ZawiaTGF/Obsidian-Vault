@@ -1,1 +1,0 @@
-window.timeGarden.charts.quarterlyMonthDisplay(dv, input.container, input);
