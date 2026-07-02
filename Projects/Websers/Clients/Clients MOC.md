@@ -13,6 +13,7 @@ tags: [moc, websers, clients]
 | Client | Industry | Stack | MOC |
 |---|---|---|---|
 | Printly | Print-on-demand | Odoo + WordPress | [[Printly/Printly MOC]] |
+| PrestoEat | TBD | TBD | [[PrestoEat/PrestoEat MOC]] |
 
 ---
 
