@@ -10,7 +10,9 @@ updated_at: 2026-06-11T18:27:40+03:00
 tags:
   - project
 ---
-
+Website
+linkedin & youtube
+email
 
 
 # Goal 1: The Business-First Demonstration Flow Objective: Move the demo from a "guided tour of buttons" to a "solution for pain points," aligning all five founders on a unified value proposition.
